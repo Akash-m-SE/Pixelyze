@@ -63,6 +63,21 @@ export async function deleteImage(imageId: string) {
   try {
     await connectToDatabase();
 
+    const image = await Image.findById(imageId);
+
+    if (!image) {
+      throw new Error("Image Document not found in database");
+    }
+
+    // deleting the image from cloudinary
+    const deleteImageFromCloudinary = await cloudinary.uploader.destroy(
+      image.publicId
+    );
+
+    if (!deleteImageFromCloudinary) {
+      throw new Error("Unable to delete the image from cloudinary");
+    }
+
     await Image.findByIdAndDelete(imageId);
   } catch (error) {
     handleError(error);
