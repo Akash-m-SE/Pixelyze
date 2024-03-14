@@ -14,9 +14,12 @@ const Sidebar = () => {
   return (
     <aside className="sidebar">
       <div className="flex size-full flex-col gap-4">
-        <Link href="/" className="sidebar-logo">
+        <Link
+          href="/"
+          className="sidebar-logo flex items-center justify-center"
+        >
           <Image
-            src="/assets/images/logo-text.svg"
+            src="/assets/images/pixelyze_logo.gif"
             alt="Logo"
             width={180}
             height={28}
