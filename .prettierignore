@@ -1,0 +1,19 @@
+# Ignore artifacts:
+build
+coverage
+
+.next/
+/node_modules
+/public
+
+.env
+.env.local
+.gitignore
+*config*
+.eslintrc
+.eslintrc.js
+.eslintrc.json
+tsconfig.json
+package-lock.json
+package.json
+*.d.ts

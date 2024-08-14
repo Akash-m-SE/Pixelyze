@@ -14,10 +14,7 @@ const MobileNav = () => {
 
   return (
     <header className="header">
-      <Link
-        href="/"
-        className="flex items-center justify-center"
-      >
+      <Link href="/" className="flex items-center justify-center">
         <h1 className="text-purple-600 font-bold text-4xl">Pixelyze</h1>
       </Link>
 

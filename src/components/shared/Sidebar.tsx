@@ -23,6 +23,7 @@ const Sidebar = () => {
             alt="Logo"
             width={180}
             height={28}
+            unoptimized
           />
         </Link>
 
