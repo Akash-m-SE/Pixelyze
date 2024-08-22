@@ -43,6 +43,8 @@ You will need to obtain credentials from the respective services:
 
 - **MongoDB:** Sign in at at [MongoDB](https://www.mongodb.com/) and create a MongoDB cluster to get your `MONGODB_URI`.
 
+- **Cloudinary:** Sign in at [Cloudinary](https://cloudinary.com/) to get your `CLOUDINARY_API_KEY`, `NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME`, and `CLOUDINARY_API_SECRET`.
+
 Add the following env variables with their values to your `.env.local` file:
 
 `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY`
